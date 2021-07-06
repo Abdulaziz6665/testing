@@ -28,8 +28,6 @@ function SinglePage () {
     refMan.current.className = 'btn'
   }
 
-  console.log(manORgirl)
-
   return (
     <>
       <div className="title-wrapper">
@@ -56,7 +54,12 @@ function SinglePage () {
             <p>Какой у тебя рост?<sup className="cm">см</sup></p>
             <div className="wrapper-height">
               <button onClick={() => setHeight(height - 1)}>{height - 1}</button>
-              <input type="text" placeholder={height} onChange={(e) => setHeight(Number(e.target.value))} />
+              <input type="text" placeholder={height} onChange={(e) => {
+                setHeight(Number(e.target.value))
+                setTimeout(() => {
+                  e.target.value = ''
+                }, 2000)
+              }} />
               <button onClick={() => setHeight(height + 1)}>{height + 1}</button>
             </div>
           </div>
@@ -64,7 +67,12 @@ function SinglePage () {
             <p>Какой вес?<sup className="cm">кг</sup></p>
             <div className="wrapper-height">
               <button onClick={() => setWeight(weight - 1)}>{weight - 1}</button>
-              <input type="text" placeholder={weight} onChange={(e) => setWeight(Number(e.target.value))} />
+              <input type="text" placeholder={weight} onChange={(e) => {
+                setWeight(Number(e.target.value))
+                setTimeout(() => {
+                  e.target.value = ''
+                }, 2000)
+              }} />
               <button onClick={() => setWeight(weight + 1)}>{weight + 1}</button>
             </div>
           </div>
@@ -72,7 +80,12 @@ function SinglePage () {
             <p>Сколько тебе лет?</p>
             <div className="wrapper-height">
               <button onClick={() => setAge(age - 1)}>{age - 1}</button>
-              <input type="text" placeholder={age} onChange={(e) => setAge(Number(e.target.value))} />
+              <input type="text" placeholder={age} onChange={(e) => {
+                setAge(Number(e.target.value))
+                setTimeout(() => {
+                  e.target.value = ''
+                }, 2000)
+              }} />
               <button onClick={() => setAge(age + 1)}>{age + 1}</button>
             </div>
           </div>
