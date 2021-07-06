@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 16px 95px 16px;
+  background-color: #E5E5E5;
+}
+
+.title-wrapper {
+  margin-bottom: 47px;
+}
+
+.main-title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #313131;
+  text-align: center;
+}
+
+.main-title-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 270px;
+  color: #6D6D6D;
+  text-align: center;
+  font-size: 14px;
+}
+
+.wrapper-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 106px;
+  padding: 13px 23px;
+  background: none;
+  border: none;
+  background-color: #fff;
+  border-radius: 7px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-sel {
+  background-color: #5F6CFF;
+  color: #fff;
+}
+
+.wrapper-questions {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+}
+
+.question {
+  display: flex;
+  padding: 13px 34px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+.question p {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  font-size: 14px;
+  margin: 0;
+}
+
+.question .cm {
+  height: 100%;
+  margin-left: 10px;
+  opacity: 0.6;
+}
+
+.wrapper-height {
+  display: flex;
+  margin-left: auto;
+}
+
+.wrapper-height input {
+  text-align: center;
+  width: 40px;
+  height: 30px;
+  border: none;
+  margin: 0 5px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #5F6CFF;
+  outline: none;
+}
+
+.wrapper-height input::placeholder {
+  color: #5F6CFF;
+}
+
+.wrapper-height button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.next-step {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 15px 0 30px 0;
+  border-radius: 7px;
+  background-color: #5F6CFF;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.next-step::before {
+  content: '1/2';
+  position: absolute;
+  bottom: 10px;
+  left: 163px;
+  color: #9FA6F0;
+  font-size: 14px;
+}
