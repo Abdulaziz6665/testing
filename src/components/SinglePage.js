@@ -28,6 +28,8 @@ function SinglePage () {
     refMan.current.className = 'btn'
   }
 
+  console.log(manORgirl)
+
   return (
     <>
       <div className="title-wrapper">
